@@ -1,0 +1,72 @@
+#include<stdio.h>
+void main()
+{
+    //012for stone paper scizzor
+    int computermove,usermove;
+    while(1)
+    {
+        printf("STONE PAPER SCIZZOR\n");
+        printf("enter your move\n 0 for stone\t1 for paper\t2 for scizzor\t9 for exit\n");
+        scanf("%d",&usermove);
+        computermove=rand()%3;
+        if (usermove==9)
+        return 0;
+        else if(usermove==2&&computermove==1)
+        {
+            printf("YOU WIN\t scizzor beats paper\n");
+            printf("\n");
+            printf("the computer entered 1");
+        }
+        else if(usermove==0&&computermove==2)
+        {
+            printf("YOU WIN\t stone beats scizzor\n");
+        printf("\n");
+            printf("the computer entered 2");
+            
+        }    
+        else if(usermove==1&&computermove==0)
+        {
+            printf("YOU WIN\t paper beats stone\n");
+            printf("\n");
+            printf("the computer entered 0");
+            
+            
+        }
+         else if(usermove==1&&computermove==2)
+        {
+            printf("computer wins\t scizzor cuts the paper\n");
+            printf("\n");
+            printf("the computer entered 2");
+            
+            
+        }
+         else if(usermove==2&&computermove==0)
+        {
+            printf("COMPUTER WINS\t stone beats scizzor\n");
+            printf("\n");
+            printf("the computer entered 0");
+            
+        }
+         else if(usermove==0&&computermove==1)
+        {
+            printf("COMPUTER WINS WIN\t paper beats stone\n");
+            printf("\n");
+            printf("the computer entered 1");
+            
+        }
+        else if(usermove==computermove)
+        {
+        printf("SHOOT ITS A DRAW\n");
+        printf("the computer entered the same a you");
+    
+        }
+        else
+        {
+            printf("please enter the valid number");
+        }
+        printf("\n");
+    }
+        
+        
+        
+    }
